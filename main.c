@@ -70,7 +70,6 @@ int main()
         FILE *file=fopen("Hola", "r");
         if (file == NULL) {
             printf("El archivo no se pudo abrir.\n");
-            return 1;
         }
 
         // Cerrar el archivo al final
@@ -83,7 +82,6 @@ int main()
         FILE *archivo = fopen("archivo.txt", "w");
         if (archivo == NULL) {
             printf("El archivo no se pudo abrir para escritura.\n");
-            return 1;
         }
 
         fprintf(archivo, "Librerias Estandar en C \n");
@@ -95,7 +93,6 @@ int main()
         archivo = fopen("archivo.txt", "r");
         if (archivo == NULL) {
             printf("El archivo no se pudo abrir para lectura.\n");
-            return 1;
         }
 
         char buffer[50];
